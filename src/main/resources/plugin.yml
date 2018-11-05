@@ -1,0 +1,19 @@
+main: com.cavetale.redis.RedisPlugin
+name: Redis
+version: 0.1
+api-version: 1.13
+description: Provide Jedis and Minecraft server specific Redis information
+author: StarTux
+website: https://cavetale.com
+depend: []
+softdepend: []
+commands:
+  redis:
+    description: Redis Command
+    permission: redis.redis
+    usage: |-
+      /redis get <key>
+      /redis set <key> value
+permissions:
+  redis.redis:
+    description: Use /redis
