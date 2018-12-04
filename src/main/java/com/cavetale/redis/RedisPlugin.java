@@ -8,10 +8,7 @@ import redis.clients.jedis.Jedis;
 
 public final class RedisPlugin extends JavaPlugin {
     @Getter private static RedisPlugin instance;
-
     // --- Members
-
-    private String serverName;
     private Jedis jedis;
 
     // --- JavaPlugin
@@ -27,7 +24,6 @@ public final class RedisPlugin extends JavaPlugin {
             setEnabled(false);
             return;
         }
-        importConfig();
     }
 
     @Override
@@ -44,20 +40,10 @@ public final class RedisPlugin extends JavaPlugin {
 
     // --- Command
 
-    void importConfig() {
-        this.serverName = getConfig().getString("ServerName");
-    }
-
     @Override
     public boolean onCommand(CommandSender sender, Command command, String alias, String[] args) {
         if (args.length == 0) return false;
         switch (args[0]) {
-        case "reload": {
-            if (args.length != 1) return false;
-            importConfig();
-            sender.sendMessage("Redis config reloaded");
-            return true;
-        }
         case "get": {
             if (args.length != 2) return false;
             String key = args[1];
