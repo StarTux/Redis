@@ -47,6 +47,7 @@
               <artifactSet>
                 <includes>
                   <include>redis.clients:jedis</include>
+                  <include>org.apache.commons:commons-pool2</include>
                 </includes>
               </artifactSet>
             </configuration>
