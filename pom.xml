@@ -1,7 +1,7 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.cavetale.redis</groupId>
-  <artifactId>redis</artifactId>
+  <artifactId>redis-nukkit</artifactId>
   <packaging>jar</packaging>
   <version>0.1-SNAPSHOT</version>
   <name>Redis</name>
