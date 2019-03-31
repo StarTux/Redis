@@ -1,6 +1,6 @@
 main: com.cavetale.redis.RedisPlugin
 name: Redis
-version: 0.1
+version: "0.1"
 api: ["1.0.8"]
 description: Provide Jedis
 author: StarTux

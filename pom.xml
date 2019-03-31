@@ -60,8 +60,8 @@
   <repositories>
     <!-- Nukkit Repo -->
     <repository>
-      <id>nukkitx</id>
-      <url>https://repo.nukkitx.com/main/</url>
+      <id>nukkit-repo</id>
+      <url>https://repo.nukkitx.com/snapshot</url>
     </repository>
     <!-- Cavetale Repo -->
     <repository>
@@ -75,6 +75,7 @@
       <groupId>cn.nukkit</groupId>
       <artifactId>nukkit</artifactId>
       <version>1.0-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
     <!-- Lombok -->
     <dependency>
