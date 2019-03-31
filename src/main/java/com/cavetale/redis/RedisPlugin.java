@@ -1,12 +1,12 @@
 package com.cavetale.redis;
 
+import cn.nukkit.command.Command;
+import cn.nukkit.command.CommandSender;
+import cn.nukkit.plugin.PluginBase;
 import lombok.Getter;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
-import org.bukkit.plugin.java.JavaPlugin;
 import redis.clients.jedis.Jedis;
 
-public final class RedisPlugin extends JavaPlugin {
+public final class RedisPlugin extends PluginBase {
     @Getter private static RedisPlugin instance;
     // --- Members
     private Jedis jedis;

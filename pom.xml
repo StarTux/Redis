@@ -57,10 +57,10 @@
     </plugins>
   </build>
   <repositories>
-    <!-- Spigot Repo -->
+    <!-- Nukkit Repo -->
     <repository>
-      <id>spigot-repo</id>
-      <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+      <id>nukkitx</id>
+      <url>https://repo.nukkitx.com/main/</url>
     </repository>
     <!-- Cavetale Repo -->
     <repository>
@@ -69,11 +69,11 @@
     </repository>
   </repositories>
   <dependencies>
-    <!-- Spigot-API -->
+    <!-- Nukkit API -->
     <dependency>
-      <groupId>org.spigotmc</groupId>
-      <artifactId>spigot-api</artifactId>
-      <version>1.13.1-R0.1-SNAPSHOT</version>
+      <groupId>cn.nukkit</groupId>
+      <artifactId>nukkit</artifactId>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
     <!-- Lombok -->
     <dependency>
